@@ -4,7 +4,7 @@
 
 <head>
   
-  <title>QTableWidget根据单元格内容修改字体颜色 - 李豆豆的博客</title>
+  <title>PYQT5 无边框界面-鼠标拖动 - 李豆豆的博客</title>
   <meta charset="UTF-8">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
@@ -12,21 +12,21 @@
   
 
   <link rel="shortcut icon" href="https://i.loli.net/2020/11/26/OroJVqBGYx8KU4T.jpg" type="image/png" />
-  <meta name="description" content="今天用户提了一个需求，要求在表格中对于不同类型的数据用不同颜色来区分">
+  <meta name="description" content="PYQT5无边框界面的拖动">
 <meta property="og:type" content="article">
-<meta property="og:title" content="QTableWidget根据单元格内容修改字体颜色">
-<meta property="og:url" content="http://lizhengwei0.github.io/2020/11/27/QTableWidgetColor/index.html">
+<meta property="og:title" content="PYQT5 无边框界面-鼠标拖动">
+<meta property="og:url" content="http://lizhengwei0.github.io/2020/12/03/2020-12-03-pyqt5-ui/index.html">
 <meta property="og:site_name" content="李豆豆的博客">
-<meta property="og:description" content="今天用户提了一个需求，要求在表格中对于不同类型的数据用不同颜色来区分">
+<meta property="og:description" content="PYQT5无边框界面的拖动">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-11-27T05:28:41.000Z">
-<meta property="article:modified_time" content="2020-11-27T16:13:57.832Z">
+<meta property="article:published_time" content="2020-12-03T14:46:15.000Z">
+<meta property="article:modified_time" content="2020-12-03T15:09:08.547Z">
 <meta property="article:author" content="李豆豆">
 <meta property="article:tag" content="PYQT5">
 <meta name="twitter:card" content="summary">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,gh/nexmoe/nexmoe.github.io@latest/lib/mdui_043tiny/css/mdui.css,gh/nexmoe/nexmoe.github.io@latest/lib/iconfont/iconfont.css,gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css?v=233" crossorigin>
   
-  <link rel="stylesheet" href="/css/style.css?v=1606870448123">
+  <link rel="stylesheet" href="/css/style.css?v=1607008169125">
 <meta name="generator" content="Hexo 5.2.0"></head>
 
 <body class="mdui-drawer-body-left">
@@ -50,7 +50,7 @@
         </a>
     </div>
     <div class="nexmoe-count">
-        <div><span>文章</span>1</div>
+        <div><span>文章</span>2</div>
         <div><span>标签</span>1</div>
         <div><span>分类</span>1</div>
     </div>
@@ -126,7 +126,7 @@
 
         <li class="category-list-item">
           <a class="category-list-link" href="/categories/PYQT5/">PYQT5</a>
-          <span class="category-list-count">1</span>
+          <span class="category-list-count">2</span>
         </li>
 
         
@@ -150,7 +150,7 @@
   <div class="nexmoe-widget-wrap">
     <h3 class="nexmoe-widget-title">文章归档</h3>
     <div class="nexmoe-widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020</a><span class="archive-list-count">2</span></li></ul>
     </div>
   </div>
 
@@ -178,14 +178,14 @@
         <div class="nexmoe-post">
   
       <div class="nexmoe-post-cover" style="padding-bottom: 66.66666666666666%;"> 
-          <img data-src="https://i.loli.net/2020/11/27/pDthlbKENfJaPRq.jpg" data-sizes="auto" alt="QTableWidget根据单元格内容修改字体颜色" class="lazyload">
-          <h1>QTableWidget根据单元格内容修改字体颜色</h1>
+          <img data-src="https://i.loli.net/2020/11/27/pDthlbKENfJaPRq.jpg" data-sizes="auto" alt="PYQT5 无边框界面-鼠标拖动" class="lazyload">
+          <h1>PYQT5 无边框界面-鼠标拖动</h1>
       </div>
   
   
   <div class="nexmoe-post-meta nexmoe-rainbow" style="margin:10px 0!important;">
-    <a><i class="nexmoefont icon-calendar-fill"></i>2020年11月27日</a>
-    <a><i class="nexmoefont icon-areachart"></i>63 字</a>
+    <a><i class="nexmoefont icon-calendar-fill"></i>2020年12月03日</a>
+    <a><i class="nexmoefont icon-areachart"></i>287 字</a>
     <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
 </div>
 
@@ -194,7 +194,7 @@
       <div class="nexmoe-fixed">
         <div class="nexmoe-valign">
             <div class="nexmoe-toc">
-                <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AD%97%E4%BD%93%E9%A2%9C%E8%89%B2"><span class="toc-number">1.</span> <span class="toc-text">字体颜色</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%83%8C%E6%99%AF%E9%A2%9C%E8%89%B2"><span class="toc-number">2.</span> <span class="toc-text">背景颜色</span></a></li></ol>
+                <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%BC%A0%E6%A0%87%E6%8B%96%E5%8A%A8%E4%BA%8B%E4%BB%B6"><span class="toc-number">1.</span> <span class="toc-text">鼠标拖动事件</span></a></li></ol>
             </div>
         </div>
       </div>
@@ -202,19 +202,56 @@
   </div>
 
   <article>
-    <p>今天用户提了一个需求，要求在表格中对于不同类型的数据用不同颜色来区分</p>
+    <p>PYQT5无边框界面的拖动</p>
 <a id="more"></a>
 
-<h4 id="字体颜色"><a href="#字体颜色" class="headerlink" title="字体颜色"></a>字体颜色</h4><pre><code class="highlight python">self.tableWidget.item(<span class="number">1</span>,<span class="number">0</span>).setForeground(QBrush(QColor(<span class="number">255</span>,<span class="number">0</span>,<span class="number">0</span>)))</code></pre>
+<p>实现无边框界面需要隐藏MainWindow的标题栏</p>
+<pre><code class="highlight python"><span class="comment"># 设置窗体无边框</span>
+self.setWindowFlags(Qt.FramelessWindowHint)
+<span class="comment"># 设置背景透明</span>
+self.setAttribute(Qt.WA_TranslucentBackground)
+</code></pre>
 
-<h4 id="背景颜色"><a href="#背景颜色" class="headerlink" title="背景颜色"></a>背景颜色</h4><pre><code class="highlight python">self.tableWidget.item(<span class="number">1</span>,<span class="number">0</span>).setBackground(QBrush(QColor(<span class="number">255</span>,<span class="number">0</span>,<span class="number">0</span>)))</code></pre>
+<p>但是隐藏标题栏后会导致窗口无法拖动、放大缩小、关闭</p>
+<h4 id="鼠标拖动事件"><a href="#鼠标拖动事件" class="headerlink" title="鼠标拖动事件"></a>鼠标拖动事件</h4><p>解决窗口拖动问题我们需要重写窗口类自带的三个函数</p>
+<ul>
+<li>鼠标按下事件函数（判断鼠标是否被按下，如果按下获取当前位置）</li>
+<li>鼠标移动事件函数（判断鼠标是否被按下移动，若移动了计算移动的距离再移动窗口到当前位置）</li>
+<li>鼠标释放事件函数（固定窗口位置）</li>
+</ul>
+<p>代码如下：</p>
+<pre><code class="highlight python"> <span class="comment"># 鼠标按下事件函数</span>
+<span class="function"><span class="keyword">def</span> <span class="title">mousePressEvent</span>(<span class="params">self, event</span>):</span>
+    <span class="keyword">if</span> event.button()==Qt.LeftButton:
+        self.m_flag=<span class="literal">True</span>
+        <span class="comment">#获取鼠标相对窗口的位置</span>
+        self.m_Position=event.globalPos() - self.pos() 
+        event.accept()
+        <span class="comment">#更改鼠标图标</span>
+        self.setCursor(QCursor(Qt.OpenHandCursor))
+
+<span class="comment"># 鼠标移动事件函数        </span>
+<span class="function"><span class="keyword">def</span> <span class="title">mouseMoveEvent</span>(<span class="params">self, QMouseEvent</span>):</span>
+    <span class="keyword">if</span> Qt.LeftButton <span class="keyword">and</span> self.m_flag:  
+        <span class="comment">#更改窗口位置</span>
+        self.move(QMouseEvent.globalPos - self.m_Position)
+        QMouseEvent.accept()
+
+<span class="comment"># 鼠标松开事件函数            </span>
+<span class="function"><span class="keyword">def</span> <span class="title">mouseReleaseEvent</span>(<span class="params">self, QMouseEvent</span>):</span>
+    self.m_flag=<span class="literal">False</span>
+    self.setCursor(QCursor(Qt.ArrowCursor))
+</code></pre>
+
+<p>GIF：</p>
+
   </article>
 
   
     
   <div class="nexmoe-post-copyright">
     <strong>本文作者：</strong>李豆豆<br>
-    <strong>本文链接：</strong><a href="http://lizhengwei0.github.io/2020/11/27/QTableWidgetColor/" title="http:&#x2F;&#x2F;lizhengwei0.github.io&#x2F;2020&#x2F;11&#x2F;27&#x2F;QTableWidgetColor&#x2F;" target="_blank" rel="noopener">http:&#x2F;&#x2F;lizhengwei0.github.io&#x2F;2020&#x2F;11&#x2F;27&#x2F;QTableWidgetColor&#x2F;</a><br>
+    <strong>本文链接：</strong><a href="http://lizhengwei0.github.io/2020/12/03/2020-12-03-pyqt5-ui/" title="http:&#x2F;&#x2F;lizhengwei0.github.io&#x2F;2020&#x2F;12&#x2F;03&#x2F;2020-12-03-pyqt5-ui&#x2F;" target="_blank" rel="noopener">http:&#x2F;&#x2F;lizhengwei0.github.io&#x2F;2020&#x2F;12&#x2F;03&#x2F;2020-12-03-pyqt5-ui&#x2F;</a><br>
     
       <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
     
@@ -259,7 +296,7 @@
 
 
 <script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
- <script src="/js/app.js?v=1606870448124"></script>
+ <script src="/js/app.js?v=1607008169126"></script>
 
   
 

@@ -4,7 +4,7 @@
 
 <head>
   
-  <title>打赏 - 李豆豆的博客</title>
+  <title>QTableWidget根据单元格内容修改字体颜色 - 李豆豆的博客</title>
   <meta charset="UTF-8">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
@@ -12,22 +12,21 @@
   
 
   <link rel="shortcut icon" href="https://i.loli.net/2020/11/26/OroJVqBGYx8KU4T.jpg" type="image/png" />
-  <meta name="description" content="打赏  赞助单   时间 赞助人 金额    2020-12-1 假酒害人 1.0   2020-12-1 kk 800">
-<meta property="og:type" content="website">
-<meta property="og:title" content="打赏">
-<meta property="og:url" content="http://lizhengwei0.github.io/DS.html">
+  <meta name="description" content="今天用户提了一个需求，要求在表格中对于不同类型的数据用不同颜色来区分">
+<meta property="og:type" content="article">
+<meta property="og:title" content="QTableWidget根据单元格内容修改字体颜色">
+<meta property="og:url" content="http://lizhengwei0.github.io/2020/11/27/2020-11-27-QTableWidgetColor/index.html">
 <meta property="og:site_name" content="李豆豆的博客">
-<meta property="og:description" content="打赏  赞助单   时间 赞助人 金额    2020-12-1 假酒害人 1.0   2020-12-1 kk 800">
+<meta property="og:description" content="今天用户提了一个需求，要求在表格中对于不同类型的数据用不同颜色来区分">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://i.loli.net/2020/11/30/brFMlta3wcH6Gs7.png">
-<meta property="article:published_time" content="2020-11-25T15:31:00.000Z">
-<meta property="article:modified_time" content="2020-12-02T00:52:27.892Z">
+<meta property="article:published_time" content="2020-11-27T05:28:41.000Z">
+<meta property="article:modified_time" content="2020-11-27T16:13:57.832Z">
 <meta property="article:author" content="李豆豆">
+<meta property="article:tag" content="PYQT5">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://i.loli.net/2020/11/30/brFMlta3wcH6Gs7.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,gh/nexmoe/nexmoe.github.io@latest/lib/mdui_043tiny/css/mdui.css,gh/nexmoe/nexmoe.github.io@latest/lib/iconfont/iconfont.css,gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css?v=233" crossorigin>
   
-  <link rel="stylesheet" href="/css/style.css?v=1607008169119">
+  <link rel="stylesheet" href="/css/style.css?v=1607008169127">
 <meta name="generator" content="Hexo 5.2.0"></head>
 
 <body class="mdui-drawer-body-left">
@@ -177,31 +176,64 @@
   <div id="nexmoe-content">
     <div class="nexmoe-primary">
         <div class="nexmoe-post">
-  <article class="nexmoe-py">
-    <h2 id="打赏"><a href="#打赏" class="headerlink" title="打赏"></a>打赏</h2><p><img data-fancybox="gallery" data-sizes="auto" data-src="https://i.loli.net/2020/11/30/brFMlta3wcH6Gs7.png" alt="打赏" class="lazyload"> </p>
-<h2 id="赞助单"><a href="#赞助单" class="headerlink" title="赞助单"></a>赞助单</h2><table>
-<thead>
-<tr>
-<th>时间</th>
-<th>赞助人</th>
-<th>金额</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>2020-12-1</td>
-<td>假酒害人</td>
-<td>1.0</td>
-</tr>
-<tr>
-<td>2020-12-1</td>
-<td>kk</td>
-<td>800</td>
-</tr>
-</tbody></table>
-<hr>
+  
+      <div class="nexmoe-post-cover" style="padding-bottom: 66.66666666666666%;"> 
+          <img data-src="https://i.loli.net/2020/11/27/pDthlbKENfJaPRq.jpg" data-sizes="auto" alt="QTableWidget根据单元格内容修改字体颜色" class="lazyload">
+          <h1>QTableWidget根据单元格内容修改字体颜色</h1>
+      </div>
+  
+  
+  <div class="nexmoe-post-meta nexmoe-rainbow" style="margin:10px 0!important;">
+    <a><i class="nexmoefont icon-calendar-fill"></i>2020年11月27日</a>
+    <a><i class="nexmoefont icon-areachart"></i>63 字</a>
+    <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
+</div>
 
+  <div class="nexmoe-post-right">
+    
+      <div class="nexmoe-fixed">
+        <div class="nexmoe-valign">
+            <div class="nexmoe-toc">
+                <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AD%97%E4%BD%93%E9%A2%9C%E8%89%B2"><span class="toc-number">1.</span> <span class="toc-text">字体颜色</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%83%8C%E6%99%AF%E9%A2%9C%E8%89%B2"><span class="toc-number">2.</span> <span class="toc-text">背景颜色</span></a></li></ol>
+            </div>
+        </div>
+      </div>
+    
+  </div>
+
+  <article>
+    <p>今天用户提了一个需求，要求在表格中对于不同类型的数据用不同颜色来区分</p>
+<a id="more"></a>
+
+<h4 id="字体颜色"><a href="#字体颜色" class="headerlink" title="字体颜色"></a>字体颜色</h4><pre><code class="highlight python">self.tableWidget.item(<span class="number">1</span>,<span class="number">0</span>).setForeground(QBrush(QColor(<span class="number">255</span>,<span class="number">0</span>,<span class="number">0</span>)))</code></pre>
+
+<h4 id="背景颜色"><a href="#背景颜色" class="headerlink" title="背景颜色"></a>背景颜色</h4><pre><code class="highlight python">self.tableWidget.item(<span class="number">1</span>,<span class="number">0</span>).setBackground(QBrush(QColor(<span class="number">255</span>,<span class="number">0</span>,<span class="number">0</span>)))</code></pre>
   </article>
-  <section class="nexmoe-comment">
+
+  
+    
+  <div class="nexmoe-post-copyright">
+    <strong>本文作者：</strong>李豆豆<br>
+    <strong>本文链接：</strong><a href="http://lizhengwei0.github.io/2020/11/27/2020-11-27-QTableWidgetColor/" title="http:&#x2F;&#x2F;lizhengwei0.github.io&#x2F;2020&#x2F;11&#x2F;27&#x2F;2020-11-27-QTableWidgetColor&#x2F;" target="_blank" rel="noopener">http:&#x2F;&#x2F;lizhengwei0.github.io&#x2F;2020&#x2F;11&#x2F;27&#x2F;2020-11-27-QTableWidgetColor&#x2F;</a><br>
+    
+      <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
+    
+  </div>
+
+
+  
+  
+  <div class="nexmoe-post-meta nexmoe-rainbow">
+    
+        <a class="nexmoefont icon-appstore-fill -link" href="/categories/PYQT5/">PYQT5</a>
+    
+    
+        <a class="nexmoefont icon-tag-fill -none-link" href="/tags/PYQT5/" rel="tag">PYQT5</a>
+    
+</div>
+
+  <div class="nexmoe-post-footer">
+    <section class="nexmoe-comment">
     <div class="valine"></div>
 <script src='https://cdn.jsdelivr.net/npm/valine@1.3.9/dist/Valine.min.js'></script>
 <script>
@@ -213,8 +245,8 @@
     })
 </script>
 </section>
+  </div>
 </div>
-
     </div>
   </div>
   <script src="https://cdn.jsdelivr.net/combine/npm/lazysizes@5.1.0/lazysizes.min.js,gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js,npm/mdui@0.4.3/dist/js/mdui.min.js?v=1"></script>
@@ -227,7 +259,7 @@
 
 
 <script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
- <script src="/js/app.js?v=1607008169122"></script>
+ <script src="/js/app.js?v=1607008169128"></script>
 
   
 
